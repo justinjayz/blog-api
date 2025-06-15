@@ -9,6 +9,10 @@ const errorHandler = require("./middleware/errorHandler");
 
 dotenv.config();
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Blog API! 🚀");
+});
+
 // Middlewares
 app.use(express.json());
 
